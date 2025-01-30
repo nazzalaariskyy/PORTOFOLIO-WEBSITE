@@ -1,0 +1,404 @@
+
+body {
+    background-color: #00002A;
+    min-height: 100vh;
+    padding:0;
+    margin:0;
+    margin-bottom: -1000px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    margin-left: 650px;
+}
+
+header ul li {
+    list-style: none;
+    margin-left: 20px;
+    padding:5px;
+    background-color: #542CCE;
+    border-radius: 20px;
+    
+}
+
+header ul li a {
+    padding: 6px 15px;
+    font-family: "Kanit", serif;
+    color: #FFFFFF;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+}
+
+li:hover {
+    background-color: #9B79FF;
+}
+
+#nama{
+    color:#FFFFFF;
+    z-index: 1;
+    position: relative;
+    text-align: center;
+    font-family: "Itim", serif;
+    font-weight: 400;
+    font-style: normal;
+    top: -180px;
+    font-size: 20px;
+}
+
+#kata-user {
+    font-family: "Lalezar", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size:3em;
+    color: #FFFFFF;
+    bottom: 0;
+    text-align: center;
+}
+
+#kata-welcome {
+    font-family: "Koulen", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+    font-size: 4em;
+    text-align: center;
+    top: -100px;
+    position: relative;
+}
+
+div h1 {
+    background: linear-gradient(to right,
+     #542CCE, 
+     #9B79FF,
+     #B8A1FB,
+     #542CCE);
+    background-clip: text;
+    color: transparent;
+    background-size: 200% auto;
+    animation: gradientAnimation 3s linear infinite;
+}
+
+@keyframes gradientAnimation {
+    0%{
+        background-position: 200% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
+
+#opening-area {
+    margin-top: 200px;
+    letter-spacing: 3px;
+}
+
+svg {
+    aspect-ratio: 1280/300;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transform: translate(0, -50%);
+    
+}
+
+#aboutme {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 500px;
+    padding: 50px 10vw;
+    background-color: #542CCE;
+    top: -160px;
+    margin-bottom: -150px;
+}
+
+.title {
+    font-family: "Khand", serif;
+    font-weight: 500;
+    font-size: 50px;
+    font-style: normal;
+    color:#00002A;
+}
+
+p {
+    font-family: "Itim", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #A9ADFC;
+    margin-top: -20px;
+    width: 65%;
+    text-align: justify;
+    font-size: 1em;
+    display: flex;
+}
+
+#fotoku {
+    position: relative;
+    top: -850px;
+    left: 750px;
+    border-radius: 20px;
+}
+
+h4 {
+    font-family: "Khand", serif;
+    font-weight: 500;
+    font-size: 25px;
+    font-style: normal;
+}
+
+.skill {
+    font-family: "Itim", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #A9ADFC;
+}
+
+.logo img {
+    padding: 5px;
+}
+
+.logo {
+    margin-top: -20px;
+    background-color:#A9ADFC;
+    width: 200px;
+    border-radius: 20px;
+}
+
+
+/* .container {
+    padding: 2rem;
+} */
+
+.slider-wrapper {
+    position: relative;
+    max-width: 48rem;
+    margin: 0 auto;
+}
+
+.slider {
+    display: flex;
+    aspect-ratio: 16/9;
+    height: auto;
+    overflow-x: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    border-radius: 0.5rem;
+}
+
+.slider img {
+    flex: 0 0 100%;
+    scroll-snap-align: start;
+    object-fit: cover;
+    scroll-behavior: auto;
+}
+
+
+.slider-nav {
+    display: flex;
+    column-gap: 2rem;
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    /* overflow-y: hidden; */
+    /* position: fixed; */
+    scroll-behavior: auto;
+}
+
+.slider-nav a {
+    width: 0.50rem;
+    height: 0.50rem;
+    border-radius: 50%;
+    background-color: #00002A;
+    opacity: 0.75;
+    transition: opacity ease 0.25s;
+    margin-top: 100px;
+    scroll-behavior: auto;
+}
+
+.slider-nav a:hover {
+    background-color: #A9ADFC;
+}
+
+
+#foto {
+    height: 50px;
+}
+
+.page2 {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: row;
+    min-height: 100vh;
+    background-color: #00002A;
+    padding-top: -400px;
+    margin-bottom: -400px;
+}
+
+#portofolio {
+    margin-bottom: -500px;
+}
+
+.wave2 {
+    margin-bottom: -200px;
+}
+
+.title-port {
+    font-family: "Khand", serif;
+    font-weight: 500;
+    font-size: 50px;
+    font-style: normal;
+    color:#542CCE;
+    text-align: center;
+}
+
+.kelompok {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    gap: 100px 50px;
+    padding: 50px 10px;
+}
+
+.container .card {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 350px;
+    height: 300px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
+    transition: 0.5s;
+}
+
+.container .card:hover {
+    height: 400px;
+}
+
+.container .card .imgbox {
+    top: 20px;
+    position: absolute;
+    width: 300px;
+    height: 220px;
+    background: #333;
+    border-radius: 12px;
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+.container .card:hover .imgbox {
+    top: -100px;
+    scale: 0.75;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 2);
+}
+
+.container .card .imgbox img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container .card .content {
+    position: absolute;
+    width: 100%;
+    padding: 0 35px;
+    text-align: center;
+    top: 230px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.container .card .content .desk {
+    position: absolute;
+    width: 50%;
+    padding: 0 60px;
+    text-align: center;
+    top: 252px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.container .card:hover .content {
+    top: 130px;
+    height: 250px;
+}
+
+.container .card:hover .content .desk{
+    top: 100px;
+    height: 250px;
+}
+
+.wave3 {
+    margin-top: 200px;
+}
+
+#contact {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 500px;
+    padding: 50px 10vw;
+    top: -250px;
+    
+}
+
+.title-contact {
+    font-family: "Khand", serif;
+    font-weight: 500;
+    font-size: 50px;
+    font-style: normal;
+    color:#542CCE;
+    text-align: center;
+}
+
+.logo-kontak {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.gambar {
+    padding:50px;
+}
+
+.gambar-ig {
+    height: 50px;
+    width: 50px;
+    padding-top: 10px;
+}
